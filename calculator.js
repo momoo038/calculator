@@ -14,6 +14,22 @@ let divide = function (a, b) {
     return a / b;
 }
 
+let display = document.querySelector('#display');
+display.value = "0123456789";
+
 let number1 = 0;
 let number2 = 0;
 let operator
+
+let operate = function (operator, a, b) {
+    switch (operator) {
+        case '+':
+            return add(a, b);
+        case '-':
+            return subtract(a, b);
+        case '*':
+            return multiply(a, b);
+        case '/':
+            return divide(a, b);
+    }
+};
