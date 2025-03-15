@@ -5,7 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <script src="calculator.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Calculator</title>
   </head>
-  <body></body>
+  <body>
+    <div id="calculator">
+      <input type="text" name="display" id="display" readonly />
+      <div id="keys">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="operator">÷</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button class="operator">*</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button class="operator">-</button>
+        <button class="special, clear">C</button>
+        <button>0</button>
+        <button>.</button>
+        <button class="operator">+</button>
+        <button class="special, equals" style="grid-column: span 4">=</button>
+      </div>
+    </div>
+  </body>
 </html>
